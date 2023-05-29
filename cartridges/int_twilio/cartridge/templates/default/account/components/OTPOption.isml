@@ -1,0 +1,4 @@
+<div class="form-check custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input for-otp" id="login-form-otp" name="login-form-otp" value="true" data-toggle-modal-id='loginOTPModal' />
+    <label class="custom-control-label" for="login-form-otp">Get OTP Code</label>
+</div>
