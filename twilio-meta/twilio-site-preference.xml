@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+    <type-extension type-id="SitePreferences">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="twilioServices">
+                <display-name xml:lang="x-default">Twilio Services for 2FA/ MFA</display-name>
+                <description xml:lang="x-default">Choose your Twilio service to enable</description>
+                <type>enum-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">OTP Code</display>
+                        <value>mobileCode</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Authenticator Code</display>
+                        <value>mobileTOTP</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">OTP Code/ Authenticator Code</display>
+                        <value>mobile_code_totp</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="twilioVerifyServiceSID">
+                <display-name xml:lang="x-default">Twilio Verify Service SID - SMS</display-name>
+                <description xml:lang="x-default">Twilio verification service SID to use specified service.</description>
+                <type>string</type>
+                <mandatory-flag>true</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+        </custom-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="twilioService">
+                <display-name xml:lang="x-default">Twilio Services</display-name>
+                <attribute attribute-id="twilioServices"/>
+                <attribute attribute-id="twilioVerifyServiceSID"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+
+</metadata>
