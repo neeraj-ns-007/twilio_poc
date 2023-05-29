@@ -1,0 +1,4 @@
+<div class="form-check custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input for-totp" id="login-form-totp" name="login-form-totp" value="true" data-toggle-modal-id='loginTOTPModal' />
+    <label class="custom-control-label" for="login-form-totp">Enter TOTP Code</label>
+</div>
